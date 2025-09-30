@@ -18,7 +18,20 @@ body{
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsla(0,63%,57%,1)), color-stop(100%,hsla(0,84%,33%,1)));
 	background: -webkit-radial-gradient(center, ellipse cover, hsla(0,63%,57%,1) 0%,hsla(0,84%,33%,1) 100%);
 	width: 100%;
-	height: 2000px;  
+	height: 2000px;  /* ✅ igual que el original */
+}
+
+/* 📱 Ajustes en móviles */
+@media (max-width: 768px) {
+  #wrapper {
+    height: 2500px; /* ✅ más espacio en tablets y móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  #wrapper {
+    height: 3000px; /* ✅ aún más espacio en celulares pequeños */
+  }
 }
 
 #perspectiva{
